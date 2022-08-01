@@ -9,7 +9,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Tuanh Hub", "BloodTheme")
 
-if game.PlaceId == 7537153844 then
+if game.PlaceId == 6152116144 then
     -- MAIN
     local Main = Window:NewTab("Project Slayer Hub")
     local MainSection = Main:NewSection("Hub")
