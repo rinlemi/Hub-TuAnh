@@ -14,7 +14,10 @@ if game.PlaceId == 6152116144 then
     local Main = Window:NewTab("Project Slayer Hub")
     local MainSection = Main:NewSection("Hub")
 
-
+    MainSection:NewButton("Spotify Hub - New method farm", "hub", function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/ewyzu/Spotify-Scripts/main/Project-Slayers"))()
+    end)
+    
     MainSection:NewButton("PJ Hub", "hub", function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/Scripts/main/ProjectSlayer.lua"))()
     end)
@@ -36,6 +39,14 @@ end
  
      loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/RbScripts/main/lazyhub.lua"))()
     end)
+    
+       --Fun
+    local Fun = Window:NewTab("Fun")
+    local FunSection = Fun:NewSection("Fun")
+
+    FunSection:NewButton("One Shot All Boss Method - Chọn Insta kill", "Mở Script chọn Insta Kill", function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/CreativeHell/public-scripts/master/onepiece_awakening.lua',true))()
+end)
     
             --Server
     local server = Window:NewTab("Server")
