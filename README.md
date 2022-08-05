@@ -47,7 +47,14 @@ end
     FunSection:NewButton("One Shot All Boss Method - Chọn Insta kill", "Mở Script chọn Insta Kill", function()
       loadstring(game:HttpGet('https://raw.githubusercontent.com/CreativeHell/public-scripts/master/onepiece_awakening.lua',true))()
 end)
-    
+       --aim
+    local aim = Window:NewTab("AutoAimbot")
+    local aimSection = aim:NewSection("AutoAimbot")
+
+    aimSection:NewButton("Aimbot - Bấm P Để AutoAim - T tắt/mở hitbox", "Aimbot", function()
+      loadstring(game:HttpGet('https://pastebin.com/raw/PJtmELgP',true))()
+end)
+
             --Server
     local server = Window:NewTab("Server")
     local serverSection = server:NewSection("Server")
@@ -64,7 +71,7 @@ end)
     loadstring(game:HttpGet(('https://pastebin.com/raw/0jUv1nLc')))()
 end)
 
-    settingSection:NewKeybind("Key Tắt Mở GUI", "Bấm vào r bấm bất kì nút nào muốn!", Enum.KeyCode.P, function()
+    settingSection:NewKeybind("Key Tắt Mở GUI", "Bấm vào r bấm bất kì nút nào muốn!", Enum.KeyCode.RightAlt, function()
 	Library:ToggleUI()
     end)
     
